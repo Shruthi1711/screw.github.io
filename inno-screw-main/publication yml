@@ -1,0 +1,23 @@
+- title: "Machine Learning Approaches for Quality Control in Industrial Screwing Processes"
+  authors: "Müller, J., Schmidt, K., Weber, M."
+  venue: "Journal of Manufacturing Systems"
+  year: 2025
+  type: journal
+  abstract: "This paper presents novel machine learning methods..."
+  pdf: "/publications/mueller2025_ml_quality.pdf"
+  doi: "10.1016/j.jmsy.2025.01.001"
+  bibtex: |
+    @article{mueller2025ml,
+      title={Machine Learning Approaches for Quality Control},
+      author={M{\"u}ller, J. and Schmidt, K. and Weber, M.},
+      journal={Journal of Manufacturing Systems},
+      year={2025}
+    }
+
+- title: "Anomaly Detection in Screw Tightening Using Deep Learning"
+  authors: "Schmidt, A., Fischer, B."
+  venue: "International Conference on Manufacturing Engineering"
+  year: 2025
+  type: conference
+  abstract: "We propose a deep learning architecture..."
+  pdf: "/publications/schmidt2025_anomaly.pdf"
