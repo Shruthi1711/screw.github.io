@@ -1,0 +1,108 @@
+---
+layout: page
+title: "{% t global.publications %}"
+description: "Wissenschaftliche Veröffentlichungen des INNO-SCREW Projekts"
+background: '/img/bg-publications.jpg'
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      
+      <!-- Filter Options -->
+      <div class="publication-filters mb-4">
+        <button class="btn btn-outline-primary active" data-filter="all">All</button>
+        <button class="btn btn-outline-primary" data-filter="journal">Journal Articles</button>
+        <button class="btn btn-outline-primary" data-filter="conference">Conference Papers</button>
+        <button class="btn btn-outline-primary" data-filter="thesis">Theses</button>
+      </div>
+
+      <!-- Publications List -->
+      <div class="publications-list">
+        
+        <!-- Example Publication Entry -->
+        <div class="publication-item mb-4 p-3 border rounded" data-category="journal">
+          <h4 class="publication-title">
+            <i class="fas fa-file-alt text-primary"></i>
+            Machine Learning Approaches for Quality Control in Industrial Screwing Processes
+          </h4>
+          <p class="publication-authors text-muted">
+            <i class="fas fa-users"></i> Müller, J., Schmidt, K., Weber, M.
+          </p>
+          <p class="publication-venue">
+            <i class="fas fa-book"></i> <em>Journal of Manufacturing Systems</em>, 2025
+          </p>
+          <p class="publication-abstract">
+            This paper presents novel machine learning methods for detecting anomalies in industrial screwing operations...
+          </p>
+          <div class="publication-links">
+            <a href="#" class="btn btn-sm btn-primary">
+              <i class="fas fa-download"></i> PDF
+            </a>
+            <a href="#" class="btn btn-sm btn-outline-secondary">
+              <i class="fas fa-quote-right"></i> BibTeX
+            </a>
+            <a href="#" class="btn btn-sm btn-outline-secondary">
+              <i class="fas fa-external-link-alt"></i> DOI
+            </a>
+          </div>
+        </div>
+
+        <!-- Add more publications here -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.publication-item {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.publication-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.publication-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+.publication-filters .btn {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.publication-abstract {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+</style>
+
+<script>
+// Simple filter functionality
+document.querySelectorAll('.publication-filters .btn').forEach(button => {
+  button.addEventListener('click', function() {
+    // Remove active class from all buttons
+    document.querySelectorAll('.publication-filters .btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    
+    // Add active class to clicked button
+    this.classList.add('active');
+    
+    // Filter publications
+    const filter = this.getAttribute('data-filter');
+    document.querySelectorAll('.publication-item').forEach(item => {
+      if (filter === 'all' || item.getAttribute('data-category') === filter) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
