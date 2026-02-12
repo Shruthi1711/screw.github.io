@@ -1,0 +1,134 @@
+---
+layout: page
+title: "{% t team.title %}"
+description: "Meet the researchers and staff behind INNO-SCREW"
+background: '/img/bg-team.jpg'
+---
+
+<div class="team-page">
+  <div class="container">
+
+    <!-- Team Overview -->
+    <div class="team-intro text-center mb-5">
+      <h2>Our Interdisciplinary Team</h2>
+      <p class="lead">Experts in mechanical engineering, machine learning, and quality management working together to revolutionize industrial screwing processes.</p>
+    </div>
+
+    <!-- Team Filter -->
+    <div class="team-filter text-center mb-4">
+      <button class="btn btn-outline-primary active" data-filter="all">All</button>
+      <button class="btn btn-outline-primary" data-filter="leadership">Leadership</button>
+      <button class="btn btn-outline-primary" data-filter="researcher">Researchers</button>
+      <button class="btn btn-outline-primary" data-filter="phd">PhD Students</button>
+      <button class="btn btn-outline-primary" data-filter="technical">Technical Staff</button>
+    </div>
+
+    <!-- Team Grid -->
+    <div class="team-grid row">
+      
+      <!-- Team Member Card -->
+      <div class="col-lg-4 col-md-6 mb-4" data-category="leadership">
+        <div class="team-member-card">
+          <div class="member-image">
+            <img src="/img/team/member1.jpg" alt="Dr. Hans Müller">
+            <div class="member-overlay">
+              <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-google-scholar"></i></a>
+                <a href="#"><i class="fab fa-researchgate"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Dr. Hans Müller</h4>
+            <p class="member-role">
+              <i class="fas fa-user-tie"></i> Principal Investigator
+            </p>
+            <p class="member-expertise">
+              <i class="fas fa-tags"></i> Machine Learning, Quality Control, Industry 4.0
+            </p>
+            <div class="member-contact">
+              <a href="mailto:h.mueller@example.com">
+                <i class="fas fa-envelope"></i> h.mueller@example.com
+              </a>
+              <a href="tel:+49231123456">
+                <i class="fas fa-phone"></i> +49 231 123456
+              </a>
+            </div>
+            <button class="btn btn-sm btn-primary mt-2" data-toggle="modal" data-target="#modal-member1">
+              <i class="fas fa-user"></i> View Profile
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- More team members... -->
+
+    </div>
+
+    <!-- Open Positions -->
+    <div class="open-positions mt-5 p-4 bg-light rounded">
+      <h3><i class="fas fa-briefcase"></i> Open Positions</h3>
+      <div class="position-list">
+        <div class="position-item">
+          <h5>PhD Position: Machine Learning for Quality Assurance</h5>
+          <p>Full-time position starting Spring 2026</p>
+          <a href="/careers/phd-ml-qa" class="btn btn-primary">
+            <i class="fas fa-arrow-right"></i> Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Member Detail Modal -->
+<div class="modal fade" id="modal-member1" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Dr. Hans Müller</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="/img/team/member1.jpg" class="img-fluid rounded-circle mb-3" alt="Dr. Hans Müller">
+            <div class="social-links-large">
+              <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a href="#"><i class="fab fa-google-scholar fa-2x"></i></a>
+              <a href="#"><i class="fab fa-researchgate fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h6>Biography</h6>
+            <p>Dr. Müller is a leading expert in applying machine learning to manufacturing quality control. He has over 15 years of experience in industry and academia...</p>
+            
+            <h6>Education</h6>
+            <ul>
+              <li>PhD in Mechanical Engineering, TU Dortmund, 2015</li>
+              <li>MSc in Computer Science, RWTH Aachen, 2010</li>
+            </ul>
+            
+            <h6>Research Interests</h6>
+            <ul>
+              <li>Deep Learning for Anomaly Detection</li>
+              <li>Industry 4.0 and Smart Manufacturing</li>
+              <li>Signal Processing and Time Series Analysis</li>
+            </ul>
+            
+            <h6>Selected Publications</h6>
+            <ul>
+              <li><a href="#">Machine Learning in Manufacturing (2024)</a></li>
+              <li><a href="#">Quality Control 4.0 (2023)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
