@@ -1,0 +1,125 @@
+---
+layout: page
+title: "Interactive Demos"
+description: "Try our machine learning models and explore our datasets"
+background: '/img/bg-demos.jpg'
+---
+
+<div class="demos-page">
+  <div class="container">
+
+    <!-- Demos Section -->
+    <section class="demos-section mb-5">
+      <h2 class="section-title">
+        <i class="fas fa-laptop-code"></i> Interactive Demonstrations
+      </h2>
+      
+      <div class="row">
+        
+        <!-- Demo Card 1 -->
+        <div class="col-lg-6 mb-4">
+          <div class="demo-card">
+            <div class="demo-thumbnail">
+              <img src="/img/demos/anomaly-detection.jpg" alt="Anomaly Detection Demo">
+              <div class="demo-badge">
+                <i class="fas fa-bolt"></i> Live Demo
+              </div>
+            </div>
+            <div class="demo-content">
+              <h4>Screw Tightening Anomaly Detection</h4>
+              <p>Upload your torque-angle curves and get real-time anomaly predictions using our trained neural network.</p>
+              <div class="demo-features">
+                <span class="badge badge-warning">
+                  <i class="fas fa-database"></i> Interactive
+                </span>
+              </div>
+              <a href="/demos/visualization" class="btn btn-primary btn-block mt-3">
+                <i class="fas fa-eye"></i> Explore Data
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Datasets Section -->
+    <section class="datasets-section mb-5">
+      <h2 class="section-title">
+        <i class="fas fa-database"></i> Open Datasets
+      </h2>
+      
+      <div class="dataset-list">
+        
+        <!-- Dataset Item -->
+        <div class="dataset-item">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h4 class="dataset-title">
+                <i class="fas fa-table"></i> Industrial Screw Tightening Dataset v2.0
+              </h4>
+              <p class="dataset-description">
+                Comprehensive dataset containing 50,000+ screw tightening operations with torque-angle curves, labeled anomalies, and process parameters from 5 different screw stations.
+              </p>
+              <div class="dataset-stats">
+                <span class="stat-item">
+                  <i class="fas fa-file-alt"></i> 50,234 samples
+                </span>
+                <span class="stat-item">
+                  <i class="fas fa-hdd"></i> 2.3 GB
+                </span>
+                <span class="stat-item">
+                  <i class="fas fa-download"></i> 1,247 downloads
+                </span>
+                <span class="stat-item">
+                  <i class="fas fa-tag"></i> v2.0
+                </span>
+              </div>
+              <div class="dataset-tags mt-2">
+                <span class="badge badge-primary">Time Series</span>
+                <span class="badge badge-primary">Anomaly Detection</span>
+                <span class="badge badge-primary">Manufacturing</span>
+                <span class="badge badge-primary">Labeled</span>
+              </div>
+            </div>
+            <div class="col-md-4 text-md-right">
+              <a href="/datasets/screw-tightening-v2" class="btn btn-primary btn-lg mb-2">
+                <i class="fas fa-download"></i> Download
+              </a>
+              <br>
+              <a href="/datasets/screw-tightening-v2/docs" class="btn btn-outline-secondary">
+                <i class="fas fa-book"></i> Documentation
+              </a>
+              <br>
+              <a href="/datasets/screw-tightening-v2/cite" class="btn btn-outline-secondary">
+                <i class="fas fa-quote-right"></i> Cite Dataset
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- More datasets... -->
+
+      </div>
+    </section>
+
+    <!-- API Access Section -->
+    <section class="api-section p-4 bg-dark text-white rounded">
+      <h3><i class="fas fa-code"></i> API Access</h3>
+      <p>Access our models and datasets programmatically through our RESTful API:</p>
+      <pre class="bg-light text-dark p-3 rounded"><code>import requests
+
+# Predict anomaly from torque-angle curve
+response = requests.post(
+    'https://api.inno-screw.de/v1/predict',
+    json={'data': torque_angle_curve},
+    headers={'Authorization': 'Bearer YOUR_API_KEY'}
+)
+</code></pre>
+      <a href="/api-docs" class="btn btn-light">
+        <i class="fas fa-book"></i> API Documentation
+      </a>
+    </section>
+
+  </div>
+</div>
