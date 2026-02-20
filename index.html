@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Forschungsprojekt für intelligentes Qualitätsmanagement in industriellen Verschraubungsprozessen mittels maschinellen Lernens."/>
+  <title>INNO-SCREW — Start</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔩</text></svg>"/>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="logo-mark">IS</div>
+      <span>INNO-SCREW</span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"        data-i18n="nav_home">Start</a></li>
+      <li><a href="about.html"        data-i18n="nav_about">Über uns</a></li>
+      <li><a href="demo.html"         data-i18n="nav_demo">Demo</a></li>
+      <li><a href="publications.html" data-i18n="nav_pub">Publikationen</a></li>
+      <li><a href="contact.html"      data-i18n="nav_contact">Kontakt</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <button class="btn-lang" id="btn-lang" title="Switch language">EN</button>
+      <button class="btn-theme" id="btn-theme" title="Toggle dark mode">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ═════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-badge" data-i18n="hero_badge">Forschungsprojekt</span>
+    <h1 data-i18n="hero_h1">Intelligentes Qualitätsmanagement in industriellen Verschraubungsprozessen</h1>
+    <p data-i18n="hero_p">Wir entwickeln maschinelle Lernverfahren zur Erkennung fehlerhafter Schraubverbindungen und stellen der Forschungsgemeinschaft reale Industriedatensätze bereit.</p>
+    <div class="hero-cta">
+      <a href="#problem" class="btn btn-primary" data-i18n="hero_btn1">Mehr erfahren</a>
+      <a href="demo.html" class="btn btn-outline" data-i18n="hero_btn2">Zum Demo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HIGHLIGHT CARDS ══════════════════════════════════════════ -->
+<section style="padding:2.5rem 1.5rem; background:var(--bg-alt);">
+  <div class="section-inner">
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🔩</div>
+        <h3>5 Schraubstationen</h3>
+        <p>Automatische, roboterbasierte und manuelle Stationen mit durchgängiger Datenerfassungsinfrastruktur.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>Machine Learning</h3>
+        <p>Anomalieerkennung mittels moderner ML-Methoden zur Erkennung fehlerhafter Verschraubungen in Echtzeit.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Open Datasets</h3>
+        <p>Reale Messdaten aus industriellen Schraubprozessen — öffentlich verfügbar für die Forschungsgemeinschaft.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏭</div>
+        <h3>Industrienetzwerk</h3>
+        <p>Enge Zusammenarbeit mit regionalen Industriepartnern und Verbänden zum praxisnahen Wissenstransfer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROBLEM ══════════════════════════════════════════════════ -->
+<section id="problem">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 data-i18n="s_problem">Problemstellung</h2>
+    </div>
+    <div class="content-block">
+      <h3 data-i18n="problem_h">Herausforderung in der Qualitätssicherung</h3>
+      <p data-i18n="problem_p">Schrauben ist eines der wichtigsten Fügeverfahren der industriellen Fertigung. Die derzeit eingesetzten Methoden der statistischen Prozessüberwachung stoßen bei komplexen Anwendungsfällen an ihre Grenzen. Fehlerhafte Verschraubungen führen zu kostspieligen Demontagemaßnahmen und Rückrufaktionen.</p>
+      <p>Die Folgen sind kostspielige Demontagemaßnahmen, Rückrufaktionen und potenzielle Imageschäden. Diese Problematik verschärft sich durch die zunehmende Individualisierung in der Produktion, die zu einer wachsenden Vielfalt möglicher Fehlerfälle führt. Gleichzeitig fehlen öffentlich verfügbare Datensätze mit realen Messdaten.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GOALS ════════════════════════════════════════════════════ -->
+<section id="goals" style="background:var(--bg-alt);">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 data-i18n="s_goal">Zielsetzung</h2>
+    </div>
+    <div class="content-block">
+      <h3 data-i18n="goal_h">Unsere Ziele</h3>
+      <p data-i18n="goal_p">Aufbau eines Innovationszentrums mit fünf Schraubstationen, Bereitstellung offener Datensätze und Entwicklung von ML-Methoden zur Anomalieerkennung.</p>
+      <p>Das erste Ziel ist die Anbindung von 5 Schraubstationen als Datenlieferanten. Das zweite Ziel ist die experimentelle Phase zur Datenerzeugung und Bereitstellung. Das dritte Ziel ist der Aufbau von Domänenwissen durch gezielte Schulungsmaßnahmen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ APPROACH ═════════════════════════════════════════════════ -->
+<section id="approach">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 data-i18n="s_approach">Vorgehensweise</h2>
+    </div>
+    <div class="content-block">
+      <h3 data-i18n="approach_h">Systematisches Vorgehen</h3>
+      <p data-i18n="approach_p">Die Umsetzung erfolgt in fünf Arbeitspaketen über 30 Monate – von der Infrastrukturanbindung bis zum Wissenstransfer.</p>
+      <p>Nach der initialen Definition von Anforderungen wird die technische Infrastruktur der Schraubdemonstratoren digital befähigt. Ein besonderer Fokus liegt auf der systematischen Durchführung von Experimenten. Die gesammelten Daten werden durch eine experimentelle Vorstudie validiert.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEWS ══════════════════════════════════════════════════════ -->
+<section style="background:var(--bg-alt);">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 data-i18n="s_news">Neuigkeiten</h2>
+    </div>
+    <div class="post-list">
+      <a href="#" class="post-item">
+        <span class="post-meta">01. Dezember 2025 &bull; RIF e.V. &bull; 3 Min. Lesezeit</span>
+        <h3>Ein Jahr INNO-SCREW</h3>
+        <p>Meilensteine und Fortschritte im Innovationszentrum für intelligente Schraubtechnik.</p>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-meta">16. Mai 2025 &bull; RIF e.V. &bull; 3 Min. Lesezeit</span>
+        <h3>SchraubTec Landshut</h3>
+        <p>Erste Einblicke und neue Kontakte auf der führenden Fachveranstaltung.</p>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-meta">01. Januar 2025 &bull; RIF e.V. &bull; 2 Min. Lesezeit</span>
+        <h3>Start des INNO-KOM-Forschungsprojekts INNO-SCREW</h3>
+        <p>Aufbau eines Innovationszentrums für intelligentes Qualitätsmanagement in der Schraubtechnik.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FUNDING ═══════════════════════════════════════════════════ -->
+<section>
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 data-i18n="s_funding">Förderhinweis</h2>
+    </div>
+    <div class="funding-box">
+      <div class="funding-logo">🏛️</div>
+      <p data-i18n="funding_p">Das Vorhaben wird über die EURONORM GmbH im Rahmen des Förderprogramms <em>„Innovationskompetenz INNO-KOM"</em> des Bundesministeriums für Wirtschaft und Energie (BMWE) gefördert.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <strong>INNO-SCREW</strong> — RIF Institut für Forschung und Transfer e.V., Dortmund<br/>
+    <div style="margin-top:.6rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <a href="contact.html" data-i18n="footer_imp">Impressum</a>
+      <a href="contact.html" data-i18n="footer_priv">Datenschutz</a>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_copy">Urheberrecht</span> &copy; RIF e.V. 2025
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
