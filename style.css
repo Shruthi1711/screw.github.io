@@ -1,103 +1,72 @@
-*{
+* {
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
-body{
+body {
   background:#0f172a;
   color:white;
-  scroll-behavior:smooth;
 }
 
-header{
-  position:fixed;
-  width:100%;
-  background:rgba(0,0,0,0.6);
-  backdrop-filter:blur(10px);
-  padding:15px 50px;
-  z-index:1000;
-}
-
-nav{
+header {
   display:flex;
   justify-content:space-between;
   align-items:center;
+  padding:15px 50px;
+  position:fixed;
+  width:100%;
+  backdrop-filter:blur(10px);
+  background:rgba(0,0,0,0.6);
+  z-index:10;
 }
 
-nav ul{
-  list-style:none;
-  display:flex;
-  gap:30px;
-}
-
-nav a{
-  color:white;
+header nav a {
+  margin-left:25px;
   text-decoration:none;
+  color:white;
   font-weight:500;
   transition:0.3s;
 }
-
-nav a:hover{
+header nav a:hover {
   color:#38bdf8;
 }
 
-.hero{
-  height:100vh;
+.hero {
+  height:60vh;
   display:flex;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
   text-align:center;
+  padding-top:60px;
   background:linear-gradient(135deg,#1e293b,#0f172a);
 }
 
-.hero h1{
-  font-size:3rem;
+.hero-content h1 {
+  font-size:2.8rem;
+  margin-bottom:10px;
 }
 
-.hero button{
-  margin-top:20px;
-  padding:12px 25px;
-  border:none;
-  background:#38bdf8;
-  color:white;
-  border-radius:30px;
-  cursor:pointer;
-  transition:0.3s;
+.section {
+  padding:80px 10%;
 }
 
-.hero button:hover{
-  background:#0284c7;
-}
-
-.section{
-  padding:100px 10%;
-  text-align:center;
-}
-
-.dark{
+.dark {
   background:#1e293b;
 }
 
-.cards{
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  margin-top:40px;
-  flex-wrap:wrap;
+.btn {
+  display:inline-block;
+  background:#38bdf8;
+  color:black;
+  padding:10px 20px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:600;
+  margin-top:15px;
 }
 
-.card{
-  background:rgba(255,255,255,0.05);
-  padding:30px;
-  border-radius:15px;
-  width:250px;
-  transition:0.3s;
-  backdrop-filter:blur(10px);
-}
-
-.card:hover{
-  transform:translateY(-10px);
-  background:rgba(56,189,248,0.1);
+.news p {
+  margin-top:10px;
 }
