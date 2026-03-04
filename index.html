@@ -1,79 +1,135 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Intelligentes Qualitätsmanagement – INNO-SCREW</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>INNO-SCREW — Intelligentes Qualitätsmanagement</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔩</text></svg>"/>
 </head>
 <body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><div class="logo-mark">IS</div><span>INNO-SCREW</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"        data-i18n="nav_home">Start</a></li>
+      <li><a href="about.html"        data-i18n="nav_about">Über uns</a></li>
+      <li><a href="demo.html"         data-i18n="nav_demo">Demo</a></li>
+      <li><a href="publications.html" data-i18n="nav_pub">Publikationen</a></li>
+      <li><a href="contact.html"      data-i18n="nav_contact">Kontakt</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="btn-lang" id="btn-lang">EN</button>
+      <button class="btn-theme" id="btn-theme">🌙</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
 
-<header>
-  <div class="logo">INNO-SCREW</div>
-  <nav>
-    <a href="#hero">Start</a>
-    <a href="#about">Über uns</a>
-    <a href="#demo">Demo</a>
-    <a href="#publications">Publikationen</a>
-    <a href="#contact">Kontakt</a>
-  </nav>
-</header>
-
-<section id="hero" class="hero">
+<div class="hero">
   <div class="hero-content">
-    <h1>Intelligentes Qualitätsmanagement<br>in Verschraubungsprozessen</h1>
-    <p>Wir entwickeln ML-Methoden zur Erkennung fehlerhafter Schraubverbindungen.</p>
+    <div class="hero-badge" data-i18n="hero_badge">Forschungsprojekt</div>
+    <h1 data-i18n="hero_h1">Intelligentes Qualitätsmanagement in industriellen Verschraubungsprozessen</h1>
+    <p data-i18n="hero_p">Wir entwickeln maschinelle Lernverfahren zur Erkennung fehlerhafter Schraubverbindungen und stellen der Forschungsgemeinschaft reale Industriedatensätze bereit.</p>
+    <div class="hero-cta">
+      <a href="#problem" class="btn btn-primary" data-i18n="hero_btn1">Mehr erfahren</a>
+      <a href="demo.html" class="btn btn-outline" data-i18n="hero_btn2">Zum Demo</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">5<span>+</span></div><div class="stat-label">Schraubstationen</div></div>
+      <div class="stat"><div class="stat-num">30<span>Mo</span></div><div class="stat-label">Projektlaufzeit</div></div>
+      <div class="stat"><div class="stat-num">INNO<span>-KOM</span></div><div class="stat-label">Förderprogramm</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="features-strip">
+  <div class="features-grid">
+    <div class="feature-card"><span class="feature-icon">🔩</span><span class="feature-num">AP 01</span><h3>5 Schraubstationen</h3><p>Automatische, roboterbasierte und manuelle Stationen mit durchgängiger Datenerfassungsinfrastruktur.</p></div>
+    <div class="feature-card"><span class="feature-icon">🤖</span><span class="feature-num">AP 02</span><h3>Machine Learning</h3><p>Anomalieerkennung mittels moderner ML-Methoden zur Erkennung fehlerhafter Verschraubungen in Echtzeit.</p></div>
+    <div class="feature-card"><span class="feature-icon">📊</span><span class="feature-num">AP 03</span><h3>Open Datasets</h3><p>Reale Messdaten aus industriellen Schraubprozessen — öffentlich verfügbar für die Forschungsgemeinschaft.</p></div>
+    <div class="feature-card"><span class="feature-icon">🏭</span><span class="feature-num">AP 04</span><h3>Industrienetzwerk</h3><p>Enge Zusammenarbeit mit regionalen Industriepartnern und Verbänden zum praxisnahen Wissenstransfer.</p></div>
+  </div>
+</div>
+
+<section id="problem">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label" data-i18n="s_problem">Problemstellung</div>
+      <h2 data-i18n="problem_h">Herausforderung in der Qualitätssicherung</h2>
+    </div>
+    <div class="content-block">
+      <p data-i18n="problem_p">Schrauben ist eines der wichtigsten Fügeverfahren der industriellen Fertigung.</p>
+      <p>Die Folgen fehlerhafter Verschraubungen sind kostspielige Demontagemaßnahmen, Rückrufaktionen und potenzielle Imageschäden.</p>
+      <div class="highlight-box"><p>Gleichzeitig fehlen öffentlich verfügbare Datensätze mit realen Messdaten — eine Lücke, die INNO-SCREW gezielt schließt.</p></div>
+    </div>
   </div>
 </section>
 
-<section id="about" class="section">
-  <h2>Über uns</h2>
-  <p>Wir entwickeln maschinelle Lernverfahren zur Erkennung fehlerhafter Schraubverbindungen
-  und stellen reale Industriedatensätze bereit.</p>
+<section id="zielsetzung" style="background:var(--bg-alt);">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label" data-i18n="s_goal">Zielsetzung</div>
+      <h2 data-i18n="goal_h">Unsere Ziele</h2>
+      <p data-i18n="goal_p">Aufbau eines Innovationszentrums mit fünf Schraubstationen, Bereitstellung offener Datensätze und Entwicklung von ML-Methoden zur Anomalieerkennung.</p>
+    </div>
+    <div class="goals-list-grid">
+      <div class="goal-item"><div class="goal-num">01</div><div><h4>Schraubstationen anbinden</h4><p>Anbindung von 5 Schraubstationen als Datenlieferanten für ein einheitliches, skalierbares Erfassungssystem.</p></div></div>
+      <div class="goal-item"><div class="goal-num">02</div><div><h4>Datenerzeugung und Bereitstellung</h4><p>Experimentelle Phase zur Datenerzeugung, Validierung und öffentlichen Bereitstellung realer Industriedaten.</p></div></div>
+      <div class="goal-item"><div class="goal-num">03</div><div><h4>Domänenwissen aufbauen</h4><p>Aufbau von Domänenwissen durch gezielte Schulungsmaßnahmen und Transfer in die Forschungsgemeinschaft.</p></div></div>
+    </div>
+  </div>
 </section>
 
-<section id="demo" class="section dark">
-  <h2>Demo</h2>
-  <p>Erkunden Sie unseren Demonstrator zur Qualitätsüberwachung.</p>
-  <a class="btn" href="#">Zum Demo</a>
+<section id="vorgehensweise">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label" data-i18n="s_approach">Vorgehensweise</div>
+      <h2 data-i18n="approach_h">Systematisches Vorgehen</h2>
+      <p data-i18n="approach_p">Die Umsetzung erfolgt in fünf Arbeitspaketen über 30 Monate.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-dot">AP1</div><div class="timeline-content"><h4>Anforderungsdefinition &amp; Infrastruktur</h4><p>Initiale Definition technischer Anforderungen und digitale Befähigung der Schraubdemonstratoren.</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot">AP2</div><div class="timeline-content"><h4>Datenerfassung &amp; Experimentdesign</h4><p>Systematische Durchführung von Experimenten zur Erzeugung repräsentativer Fehlerszenarien.</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot">AP3</div><div class="timeline-content"><h4>Datenvalidierung &amp; Vorstudie</h4><p>Die gesammelten Daten werden durch eine experimentelle Vorstudie validiert und aufbereitet.</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot">AP4</div><div class="timeline-content"><h4>ML-Methodenentwicklung</h4><p>Entwicklung und Evaluierung moderner maschineller Lernverfahren zur Anomalieerkennung.</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot">AP5</div><div class="timeline-content"><h4>Wissenstransfer &amp; Dissemination</h4><p>Bereitstellung von Open Datasets, Publikationen und Schulungsmaßnahmen für die Industrie.</p></div></div>
+    </div>
+  </div>
 </section>
 
-<section id="publications" class="section">
-  <h2>Publikationen</h2>
-  <p>Aktuelle Studien und Forschungsergebnisse werden hier vorgestellt.</p>
-  <a class="btn" href="#">Mehr erfahren</a>
+<section id="neuigkeiten" style="background:var(--bg-alt);">
+  <div class="section-inner">
+    <div class="section-header"><div class="section-label">Aktuelles</div><h2>Neuigkeiten</h2></div>
+    <div class="news-grid">
+      <a href="#" class="news-card"><div class="news-meta"><span>01. Dez 2025</span> · RIF e.V. · 3 Min.</div><h3>Ein Jahr INNO-SCREW</h3><p>Meilensteine und Fortschritte im Innovationszentrum für intelligente Schraubtechnik.</p><div class="news-readmore">Weiterlesen →</div></a>
+      <a href="#" class="news-card"><div class="news-meta"><span>16. Mai 2025</span> · RIF e.V. · 3 Min.</div><h3>SchraubTec Landshut</h3><p>Erste Einblicke und neue Kontakte auf der führenden Fachveranstaltung.</p><div class="news-readmore">Weiterlesen →</div></a>
+      <a href="#" class="news-card"><div class="news-meta"><span>01. Jan 2025</span> · RIF e.V. · 2 Min.</div><h3>Start des INNO-KOM-Forschungsprojekts INNO-SCREW</h3><p>Aufbau eines Innovationszentrums für intelligentes Qualitätsmanagement in der Schraubtechnik.</p><div class="news-readmore">Weiterlesen →</div></a>
+    </div>
+  </div>
 </section>
 
-<section class="section dark">
-  <h2>Problemstellung</h2>
-  <p>Schrauben ist ein wesentlicher Fügevorgang in der Fertigung. Fehlerhafte Verschraubungen
-  führen zu Ausfällen und hohen Kosten.</p>
+<section id="foerderung">
+  <div class="section-inner">
+    <div class="section-header"><div class="section-label">Förderhinweis</div><h2>Gefördert durch</h2></div>
+    <div class="funding-box">
+      <div class="funding-logo">🏛️</div>
+      <p><strong>Bundesministerium für Wirtschaft und Energie (BMWE)</strong></p>
+      <p data-i18n="funding_p">Das Vorhaben wird über die EURONORM GmbH im Rahmen des Förderprogramms <em>„Innovationskompetenz INNO-KOM"</em> des Bundesministeriums für Wirtschaft und Energie (BMWE) gefördert.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section">
-  <h2>Zielsetzung</h2>
-  <p>Wir bauen ein Zentrum mit fünf Schraubstationen auf, erzeugen Daten und entwickeln
-  ML-Methoden zur Anomalieerkennung.</p>
-</section>
-
-<section class="section dark">
-  <h2>Vorgehensweise</h2>
-  <p>Die Umsetzung erfolgt in fünf Arbeitspaketen – von Datenerfassung bis Wissenstransfer.</p>
-</section>
-
-<section class="news section">
-  <h2>Neuigkeiten</h2>
-  <p>01. Dezember 2025 · Meilensteine und Fortschritte im Innovationszentrum.</p>
-  <p>16. Mai 2025 · Einblicke und neue Kontakte auf Fachveranstaltungen.</p>
-</section>
-
-<footer id="contact" class="section dark">
-  <h2>Kontakt</h2>
-  <p>INNO-SCREW – RIF Institut für Forschung und Transfer e.V., Dortmund</p>
-  <p>&copy; 2025 | Impressum | Datenschutz</p>
+<footer>
+  <div class="footer-inner">
+    <strong>INNO-SCREW</strong> — RIF Institut für Forschung und Transfer e.V., Dortmund
+    <div style="margin-top:.6rem;display:flex;gap:1rem;justify-content:center;">
+      <a href="contact.html" data-i18n="footer_imp">Impressum</a>
+      <a href="contact.html" data-i18n="footer_priv">Datenschutz</a>
+    </div>
+    <div class="footer-bottom">&copy; RIF e.V. 2025</div>
+  </div>
 </footer>
-
-<script src="script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
