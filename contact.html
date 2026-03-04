@@ -2,53 +2,15 @@
 <html lang="de" data-theme="light">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>INNO-SCREW — Kontakt &amp; Impressum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>INNO-SCREW — Kontakt</title>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔩</text></svg>"/>
-  <style>
-    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
-    @media(max-width:680px){ .contact-grid { grid-template-columns:1fr; } }
-    .contact-box {
-      background:var(--card-bg); border:1px solid var(--border);
-      border-radius:var(--radius); padding:1.75rem; box-shadow:var(--shadow);
-    }
-    .contact-box h3 { font-size:1.05rem; font-weight:700; color:var(--accent); margin-bottom:1rem; }
-    .contact-row { display:flex; gap:.75rem; align-items:flex-start; margin-bottom:.75rem; font-size:.9rem; }
-    .contact-row .ico { font-size:1.2rem; }
-    .contact-row a { color:var(--accent-light); }
-    .form-group { display:flex; flex-direction:column; gap:.35rem; margin-bottom:1rem; }
-    .form-group label { font-size:.85rem; font-weight:600; color:var(--text-muted); }
-    .form-group input, .form-group textarea, .form-group select {
-      padding:.55rem .85rem; border-radius:7px;
-      border:1px solid var(--border); background:var(--bg-alt);
-      color:var(--text); font-size:.9rem; font-family:inherit;
-      transition:border-color .2s;
-    }
-    .form-group input:focus, .form-group textarea:focus {
-      outline:none; border-color:var(--accent-light);
-    }
-    .form-group textarea { resize:vertical; min-height:110px; }
-    .form-submit {
-      background:var(--accent); color:#fff; border:none; border-radius:8px;
-      padding:.7rem 1.8rem; font-weight:700; font-size:.95rem; cursor:pointer;
-      transition:.2s; width:100%;
-    }
-    .form-submit:hover { background:var(--accent-light); }
-    .impressum-section { max-width:760px; margin:auto; }
-    .impressum-section h3 { font-size:1.1rem; font-weight:700; color:var(--accent); margin:1.8rem 0 .5rem; }
-    .impressum-section p { font-size:.9rem; color:var(--text-muted); margin-bottom:.5rem; }
-  </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <div class="logo-mark">IS</div>
-      <span>INNO-SCREW</span>
-    </a>
+    <a href="index.html" class="nav-brand"><div class="logo-mark">IS</div><span>INNO-SCREW</span></a>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html"        data-i18n="nav_home">Start</a></li>
       <li><a href="about.html"        data-i18n="nav_about">Über uns</a></li>
@@ -64,141 +26,80 @@
   </div>
 </nav>
 
-<!-- PAGE HEADER -->
 <div class="page-header">
   <h1 data-i18n="nav_contact">Kontakt</h1>
   <p>Nehmen Sie Kontakt auf · Get in touch</p>
 </div>
 
-<!-- CONTACT -->
 <section>
   <div class="section-inner">
     <div class="contact-grid">
-
-      <!-- Info -->
       <div>
         <div class="contact-box">
           <h3>📍 Adresse / Address</h3>
-          <div class="contact-row"><span class="ico">🏢</span>
-            <div>RIF Institut für Forschung und Transfer e.V.<br/>
-            Joseph-von-Fraunhofer-Str. 20<br/>44227 Dortmund, Deutschland</div>
-          </div>
-          <div class="contact-row"><span class="ico">📧</span>
-            <a href="mailto:innoscrew@rif-ev.de">innoscrew@rif-ev.de</a>
-          </div>
-          <div class="contact-row"><span class="ico">📞</span>
-            <a href="tel:+49231844976">+49 231 844976-0</a>
-          </div>
-          <div class="contact-row"><span class="ico">🌐</span>
-            <a href="https://www.rif-ev.de" target="_blank" rel="noopener">www.rif-ev.de</a>
-          </div>
+          <div class="contact-row"><span class="ico">🏢</span><div>RIF Institut für Forschung und Transfer e.V.<br/>Joseph-von-Fraunhofer-Str. 20<br/>44227 Dortmund, Deutschland</div></div>
+          <div class="contact-row"><span class="ico">📧</span><a href="mailto:innoscrew@rif-ev.de">innoscrew@rif-ev.de</a></div>
+          <div class="contact-row"><span class="ico">📞</span><a href="tel:+49231844976">+49 231 844976-0</a></div>
+          <div class="contact-row"><span class="ico">🌐</span><a href="https://www.rif-ev.de" target="_blank" rel="noopener">www.rif-ev.de</a></div>
         </div>
-
         <div class="contact-box" style="margin-top:1.25rem;">
-          <h3>👩‍🔬 Projektleitung / Project Lead</h3>
-          <div class="contact-row"><span class="ico">👤</span>
-            <div><strong>Dr. Anna Müller</strong><br/>Projektleiterin INNO-SCREW</div>
-          </div>
-          <div class="contact-row"><span class="ico">📧</span>
-            <a href="mailto:a.mueller@rif-ev.de">a.mueller@rif-ev.de</a>
-          </div>
+          <h3>👩‍🔬 Projektleitung</h3>
+          <div class="contact-row"><span class="ico">👤</span><div><strong>Dr. Anna Müller</strong><br/>Projektleiterin INNO-SCREW</div></div>
+          <div class="contact-row"><span class="ico">📧</span><a href="mailto:a.mueller@rif-ev.de">a.mueller@rif-ev.de</a></div>
         </div>
-
         <div class="contact-box" style="margin-top:1.25rem;">
           <h3>🔗 Links</h3>
-          <div class="contact-row"><span class="ico">📦</span>
-            <a href="https://github.com/" target="_blank" rel="noopener">GitHub Repository</a>
-          </div>
-          <div class="contact-row"><span class="ico">📊</span>
-            <a href="https://zenodo.org/" target="_blank" rel="noopener">Datensatz auf Zenodo</a>
-          </div>
-          <div class="contact-row"><span class="ico">🐦</span>
-            <a href="#">Twitter / X</a>
-          </div>
+          <div class="contact-row"><span class="ico">📦</span><a href="#" target="_blank" rel="noopener">GitHub Repository</a></div>
+          <div class="contact-row"><span class="ico">📊</span><a href="#" target="_blank" rel="noopener">Datensatz auf Zenodo</a></div>
         </div>
       </div>
-
-      <!-- Form -->
       <div class="contact-box">
         <h3>✉️ Nachricht senden / Send a message</h3>
         <form id="contact-form" onsubmit="handleForm(event)">
-          <div class="form-group">
-            <label>Name *</label>
-            <input type="text" placeholder="Ihr Name / Your name" required/>
+          <div class="form-group"><label>Name *</label><input type="text" placeholder="Ihr Name / Your name" required/></div>
+          <div class="form-group"><label>E-Mail *</label><input type="email" placeholder="ihre@email.de" required/></div>
+          <div class="form-group"><label>Organisation</label><input type="text" placeholder="Universität / Unternehmen"/></div>
+          <div class="form-group"><label>Betreff / Subject</label>
+            <select><option>Allgemeine Anfrage / General inquiry</option><option>Kooperation / Cooperation</option><option>Datensatz / Dataset</option><option>Presse / Press</option></select>
           </div>
-          <div class="form-group">
-            <label>E-Mail *</label>
-            <input type="email" placeholder="ihre@email.de" required/>
-          </div>
-          <div class="form-group">
-            <label>Organisation</label>
-            <input type="text" placeholder="Universität / Unternehmen"/>
-          </div>
-          <div class="form-group">
-            <label>Betreff / Subject</label>
-            <select>
-              <option>Allgemeine Anfrage / General inquiry</option>
-              <option>Kooperation / Cooperation</option>
-              <option>Datensatz / Dataset</option>
-              <option>Presse / Press</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Nachricht / Message *</label>
-            <textarea placeholder="Ihre Nachricht…" required></textarea>
-          </div>
+          <div class="form-group"><label>Nachricht / Message *</label><textarea placeholder="Ihre Nachricht…" required></textarea></div>
           <button type="submit" class="form-submit">Absenden / Send →</button>
         </form>
-        <div id="form-success" style="display:none; margin-top:1rem; padding:.75rem 1rem; background:#e8f8f0; border:1px solid #82d9b0; border-radius:8px; color:#1a7040; font-weight:600;">
-          ✓ Vielen Dank! Ihre Nachricht wurde gesendet. / Thank you! Your message has been sent.
+        <div id="form-success" style="display:none;margin-top:1rem;padding:.75rem 1rem;background:rgba(40,200,100,.08);border:1px solid rgba(40,200,100,.25);border-radius:8px;color:#1a8040;font-weight:600;">
+          ✓ Vielen Dank! Ihre Nachricht wurde gesendet.
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- IMPRESSUM -->
 <section style="background:var(--bg-alt);">
   <div class="section-inner">
-    <div class="section-header"><h2>Impressum &amp; Datenschutz</h2></div>
+    <div class="section-header"><div class="section-label">Rechtliches</div><h2>Impressum &amp; Datenschutz</h2></div>
     <div class="impressum-section">
       <h3>Angaben gemäß § 5 TMG</h3>
-      <p><strong>RIF Institut für Forschung und Transfer e.V.</strong><br/>
-      Joseph-von-Fraunhofer-Str. 20 · 44227 Dortmund<br/>
-      Registergericht: Amtsgericht Dortmund · Vereinsregister-Nr.: VR XXXX<br/>
-      Vertreten durch: Vorstand (ehrenamtlich)</p>
-
+      <p><strong>RIF Institut für Forschung und Transfer e.V.</strong><br/>Joseph-von-Fraunhofer-Str. 20 · 44227 Dortmund<br/>Registergericht: Amtsgericht Dortmund</p>
       <h3>Kontakt</h3>
-      <p>E-Mail: <a href="mailto:innoscrew@rif-ev.de">innoscrew@rif-ev.de</a><br/>
-      Telefon: +49 231 844976-0</p>
-
-      <h3>Haftungsausschluss / Disclaimer</h3>
+      <p>E-Mail: <a href="mailto:innoscrew@rif-ev.de">innoscrew@rif-ev.de</a> · Telefon: +49 231 844976-0</p>
+      <h3>Haftungsausschluss</h3>
       <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
-      <p>The contents of this website have been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content.</p>
-
-      <h3>Datenschutz / Privacy</h3>
+      <h3>Datenschutz</h3>
       <p>Diese Website verwendet keine Cookies zu Tracking-Zwecken. Kontaktanfragen über das Formular werden ausschließlich zur Beantwortung Ihrer Anfrage verwendet.</p>
-      <p>This website does not use tracking cookies. Contact form submissions are used solely to respond to your inquiry.</p>
-
       <h3>Förderhinweis</h3>
-      <p>Das Vorhaben <strong>INNO-SCREW</strong> wird über die EURONORM GmbH im Rahmen des Förderprogramms <em>„Innovationskompetenz INNO-KOM"</em> des Bundesministeriums für Wirtschaft und Energie (BMWE) gefördert.</p>
+      <p>Das Vorhaben <strong>INNO-SCREW</strong> wird über die EURONORM GmbH im Rahmen des Förderprogramms <em>„Innovationskompetenz INNO-KOM"</em> des BMWE gefördert.</p>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <strong>INNO-SCREW</strong> — RIF Institut für Forschung und Transfer e.V., Dortmund
-    <div style="margin-top:.6rem; display:flex; gap:1rem; justify-content:center;">
-      <a href="contact.html">Impressum</a>
-      <a href="contact.html">Datenschutz</a>
+    <div style="margin-top:.6rem;display:flex;gap:1rem;justify-content:center;">
+      <a href="contact.html">Impressum</a><a href="contact.html">Datenschutz</a>
     </div>
     <div class="footer-bottom">&copy; RIF e.V. 2025</div>
   </div>
 </footer>
-
 <script src="js/main.js"></script>
 <script>
 function handleForm(e) {
