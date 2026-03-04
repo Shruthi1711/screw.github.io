@@ -2,36 +2,15 @@
 <html lang="de" data-theme="light">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>INNO-SCREW — Publikationen</title>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔩</text></svg>"/>
-  <style>
-    .filter-bar { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:2rem; }
-    .filter-btn {
-      padding:.38rem .85rem; border-radius:6px; border:1px solid var(--border);
-      background:var(--bg-alt); color:var(--text-muted); cursor:pointer;
-      font-size:.82rem; font-weight:600; transition:.2s;
-    }
-    .filter-btn.active, .filter-btn:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
-    .bibtex-box {
-      background:var(--bg-alt); border:1px solid var(--border);
-      border-radius:6px; padding:1rem; font-family:monospace; font-size:.75rem;
-      line-height:1.6; margin-top:.75rem; display:none; white-space:pre-wrap;
-      word-break:break-all;
-    }
-    .bibtex-box.open { display:block; }
-  </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <div class="logo-mark">IS</div>
-      <span>INNO-SCREW</span>
-    </a>
+    <a href="index.html" class="nav-brand"><div class="logo-mark">IS</div><span>INNO-SCREW</span></a>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html"        data-i18n="nav_home">Start</a></li>
       <li><a href="about.html"        data-i18n="nav_about">Über uns</a></li>
@@ -47,191 +26,134 @@
   </div>
 </nav>
 
-<!-- PAGE HEADER -->
 <div class="page-header">
   <h1 data-i18n="nav_pub">Publikationen</h1>
-  <p>Wissenschaftliche Veröffentlichungen des INNO-SCREW-Projekts · Scientific publications of the INNO-SCREW project</p>
+  <p>Forschungsbeiträge und Datensätze des INNO-SCREW-Projekts</p>
 </div>
 
-<!-- PUBLICATIONS -->
 <section>
   <div class="section-inner">
-
-    <div class="filter-bar">
-      <button class="filter-btn active" data-filter="all">Alle / All</button>
-      <button class="filter-btn" data-filter="journal">Journal</button>
-      <button class="filter-btn" data-filter="conference">Konferenz / Conference</button>
-      <button class="filter-btn" data-filter="dataset">Datensatz / Dataset</button>
-      <button class="filter-btn" data-filter="2025">2025</button>
-      <button class="filter-btn" data-filter="2024">2024</button>
+    <div class="section-header">
+      <div class="section-label">Papers</div>
+      <h2>Konferenzbeiträge &amp; Artikel</h2>
+      <p>Peer-reviewed Publikationen aus dem INNO-SCREW-Forschungsprojekt</p>
     </div>
-
-    <div class="pub-list" id="pub-list">
-
-      <!-- 2025 Journal -->
-      <div class="pub-item" data-type="journal" data-year="2025">
-        <span class="pub-year">2025</span>
+    <div class="pub-list">
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
         <div class="pub-meta">
-          <h4>Anomaly Detection in Industrial Screw-Fastening Processes Using LSTM Autoencoders</h4>
-          <div class="authors">Anna Müller, Jonas Weber, Klaus Hoffmann</div>
-          <div class="venue">Journal of Manufacturing Systems, Vol. 74, pp. 112–126</div>
-          <span class="tag">Journal</span><span class="tag">ML</span><span class="tag">Anomaly Detection</span>
-          <div class="bibtex-box" id="bib-1">@article{mueller2025anomaly,
-  title   = {Anomaly Detection in Industrial Screw-Fastening Processes Using LSTM Autoencoders},
-  author  = {M{\"u}ller, Anna and Weber, Jonas and Hoffmann, Klaus},
-  journal = {Journal of Manufacturing Systems},
-  volume  = {74},
-  pages   = {112--126},
-  year    = {2025}
-}</div>
+          <h4>Anomaly Detection in Screw Fastening Processes Using LSTM-based Neural Networks</h4>
+          <div class="authors">Müller, A.; Weber, J.; Schmidt, L.; Hoffmann, K.</div>
+          <div class="venue">Procedia CIRP — 15th CIRP Conference on Intelligent Computation in Manufacturing Engineering</div>
+          <div style="margin-top:.5rem;"><span class="tag">Machine Learning</span><span class="tag">Anomaly Detection</span><span class="tag">Screw Fastening</span></div>
         </div>
-        <div class="pub-links">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-          <a href="#" onclick="toggleBib('bib-1',event)">BibTeX</a>
-        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a><a href="#">BibTeX</a></div>
       </div>
 
-      <!-- 2025 Conference -->
-      <div class="pub-item" data-type="conference" data-year="2025">
-        <span class="pub-year">2025</span>
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
         <div class="pub-meta">
-          <h4>Real-World Dataset for Screw-Joint Quality Monitoring: Design, Collection, and Baseline Results</h4>
-          <div class="authors">Lena Schmidt, Jonas Weber, Thomas Krause, Anna Müller</div>
-          <div class="venue">Procedia CIRP — 58th CIRP Conference on Manufacturing Systems (CMS 2025)</div>
-          <span class="tag">Conference</span><span class="tag">Dataset</span><span class="tag">Open Data</span>
-          <div class="bibtex-box" id="bib-2">@inproceedings{schmidt2025dataset,
-  title     = {Real-World Dataset for Screw-Joint Quality Monitoring},
-  author    = {Schmidt, Lena and Weber, Jonas and Krause, Thomas and M{\"u}ller, Anna},
-  booktitle = {Procedia CIRP},
-  year      = {2025}
-}</div>
+          <h4>INNO-SCREW Dataset: Real Industrial Torque-Angle Curves for ML Research</h4>
+          <div class="authors">Schmidt, L.; Weber, J.; Braun, F.; Müller, A.</div>
+          <div class="venue">Scientific Data (Nature Portfolio)</div>
+          <div style="margin-top:.5rem;"><span class="tag">Open Dataset</span><span class="tag">Torque</span><span class="tag">Industrial</span></div>
         </div>
-        <div class="pub-links">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-          <a href="#" onclick="toggleBib('bib-2',event)">BibTeX</a>
-        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">Zenodo</a><a href="#">DOI</a></div>
       </div>
 
-      <!-- 2025 Dataset -->
-      <div class="pub-item" data-type="dataset" data-year="2025">
-        <span class="pub-year">2025</span>
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
         <div class="pub-meta">
-          <h4>INNO-SCREW Open Dataset v1.0: Torque-Angle Time Series from Five Industrial Screw Stations</h4>
-          <div class="authors">Jonas Weber, Lena Schmidt, Felix Braun, Anna Müller</div>
-          <div class="venue">Zenodo — Open Research Data Repository</div>
-          <span class="tag">Dataset</span><span class="tag">Open Access</span>
-          <div class="bibtex-box" id="bib-3">@dataset{weber2025innoscrew,
-  title     = {INNO-SCREW Open Dataset v1.0},
-  author    = {Weber, Jonas and Schmidt, Lena and Braun, Felix and M{\"u}ller, Anna},
-  publisher = {Zenodo},
-  year      = {2025},
-  doi       = {10.5281/zenodo.XXXXXXX}
-}</div>
+          <h4>Vergleich maschineller Lernmethoden zur Fehlererkennung in Schraubprozessen</h4>
+          <div class="authors">Weber, J.; Müller, A.; Krause, T.</div>
+          <div class="venue">ZWF — Zeitschrift für wirtschaftlichen Fabrikbetrieb, Vol. 120</div>
+          <div style="margin-top:.5rem;"><span class="tag">Deutsch</span><span class="tag">SPC</span><span class="tag">Deep Learning</span></div>
         </div>
-        <div class="pub-links">
-          <a href="#">Dataset</a>
-          <a href="#">DOI</a>
-          <a href="#" onclick="toggleBib('bib-3',event)">BibTeX</a>
-        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a></div>
       </div>
 
-      <!-- 2024 Conference -->
-      <div class="pub-item" data-type="conference" data-year="2024">
-        <span class="pub-year">2024</span>
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
         <div class="pub-meta">
-          <h4>Towards Intelligent Screw-Fastening Quality Control: An Infrastructure Concept for Data-Driven Anomaly Detection</h4>
-          <div class="authors">Anna Müller, Klaus Hoffmann, Thomas Krause</div>
-          <div class="venue">Proceedings of the 17th International Conference on Quality Assurance (ICQA 2024)</div>
-          <span class="tag">Conference</span><span class="tag">Konzept</span>
-          <div class="bibtex-box" id="bib-4">@inproceedings{mueller2024towards,
-  title     = {Towards Intelligent Screw-Fastening Quality Control},
-  author    = {M{\"u}ller, Anna and Hoffmann, Klaus and Krause, Thomas},
-  booktitle = {Proceedings of ICQA 2024},
-  year      = {2024}
-}</div>
+          <h4>Infrastructure Design for Multi-Station Screw Assembly Data Acquisition</h4>
+          <div class="authors">Krause, T.; Schmidt, L.; Braun, F.</div>
+          <div class="venue">15th International Conference on Manufacturing Research (ICMR 2025)</div>
+          <div style="margin-top:.5rem;"><span class="tag">Data Acquisition</span><span class="tag">Infrastructure</span></div>
         </div>
-        <div class="pub-links">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-          <a href="#" onclick="toggleBib('bib-4',event)">BibTeX</a>
-        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a><a href="#">Slides</a></div>
       </div>
-
-      <!-- 2024 Journal -->
-      <div class="pub-item" data-type="journal" data-year="2024">
-        <span class="pub-year">2024</span>
-        <div class="pub-meta">
-          <h4>Isolation Forest vs. One-Class SVM for Torque Signal Anomaly Detection: A Comparative Study</h4>
-          <div class="authors">Jonas Weber, Anna Müller</div>
-          <div class="venue">International Journal of Advanced Manufacturing Technology, Vol. 132, pp. 4501–4515</div>
-          <span class="tag">Journal</span><span class="tag">ML</span><span class="tag">Benchmarking</span>
-          <div class="bibtex-box" id="bib-5">@article{weber2024isolation,
-  title   = {Isolation Forest vs. One-Class SVM for Torque Signal Anomaly Detection},
-  author  = {Weber, Jonas and M{\"u}ller, Anna},
-  journal = {International Journal of Advanced Manufacturing Technology},
-  volume  = {132},
-  pages   = {4501--4515},
-  year    = {2024}
-}</div>
-        </div>
-        <div class="pub-links">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-          <a href="#" onclick="toggleBib('bib-5',event)">BibTeX</a>
-        </div>
-      </div>
-
-    </div><!-- /pub-list -->
-  </div>
-</section>
-
-<!-- CITE NOTE -->
-<section style="background:var(--bg-alt); padding:2rem 1.5rem;">
-  <div class="section-inner" style="max-width:700px;">
-    <div class="funding-box">
-      <h3 style="font-size:1rem; font-weight:700; margin-bottom:.75rem;">📎 Zitierhinweis / Citation Notice</h3>
-      <p style="font-size:.88rem; color:var(--text-muted); line-height:1.7;">
-        Wenn Sie den INNO-SCREW-Datensatz oder unsere Methoden in Ihrer Forschung verwenden, zitieren Sie bitte unsere zugehörige Publikation. Die BibTeX-Einträge können über die Schaltfläche bei jeder Publikation aufgeklappt werden.<br/><br/>
-        <em>If you use the INNO-SCREW dataset or methods in your research, please cite our corresponding publication. BibTeX entries can be expanded via the button next to each publication.</em>
-      </p>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<section style="background:var(--bg-alt);">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Datensätze</div>
+      <h2>Open Datasets</h2>
+      <p>Öffentlich verfügbare Datensätze aus dem INNO-SCREW-Projekt</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>INNO-SCREW v1.0</h3>
+        <p>10.000 Schraubvorgänge aus 5 Stationen. Enthält IO/NIO-Labels, Drehmomentkurven und Winkelkurven. Format: CSV + HDF5.</p>
+        <div style="margin-top:1rem;"><a href="#" class="btn btn-accent" style="font-size:.82rem;padding:.55rem 1.2rem;">Download (Zenodo)</a></div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔬</div>
+        <h3>INNO-SCREW Benchmark</h3>
+        <p>Standardisierter Benchmarkdatensatz für den Methodenvergleich. Enthält Train/Val/Test-Split und Baseline-Ergebnisse.</p>
+        <div style="margin-top:1rem;"><a href="#" class="btn btn-accent" style="font-size:.82rem;padding:.55rem 1.2rem;">Download (GitHub)</a></div>
+      </div>
+      <div class="card">
+        <div class="card-icon">💻</div>
+        <h3>Code &amp; Notebooks</h3>
+        <p>Python-Notebooks zur Datenanalyse, Vorverarbeitung und ML-Baseline-Modelle. Reproduzierbare Pipelines mit PyTorch.</p>
+        <div style="margin-top:1rem;"><a href="#" class="btn btn-accent" style="font-size:.82rem;padding:.55rem 1.2rem;">GitHub Repository</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Vorträge</div>
+      <h2>Konferenzen &amp; Vorträge</h2>
+    </div>
+    <div class="pub-list">
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-meta">
+          <h4>SchraubTec Landshut 2025</h4>
+          <div class="authors">Vortrag: Müller, A.</div>
+          <div class="venue">Internationale Fachtagung für Schraubtechnik, Landshut — Mai 2025</div>
+        </div>
+        <div class="pub-links"><a href="#">Slides</a></div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-meta">
+          <h4>INNO-KOM Projektpräsentation — Jahrestreffen</h4>
+          <div class="authors">Vortrag: Müller, A.; Weber, J.</div>
+          <div class="venue">EURONORM Jahrestreffen, Berlin — März 2025</div>
+        </div>
+        <div class="pub-links"><a href="#">Poster</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-inner">
     <strong>INNO-SCREW</strong> — RIF Institut für Forschung und Transfer e.V., Dortmund
-    <div style="margin-top:.6rem; display:flex; gap:1rem; justify-content:center;">
-      <a href="contact.html">Impressum</a>
-      <a href="contact.html">Datenschutz</a>
+    <div style="margin-top:.6rem;display:flex;gap:1rem;justify-content:center;">
+      <a href="contact.html">Impressum</a><a href="contact.html">Datenschutz</a>
     </div>
     <div class="footer-bottom">&copy; RIF e.V. 2025</div>
   </div>
 </footer>
-
 <script src="js/main.js"></script>
-<script>
-function toggleBib(id, e) {
-  e.preventDefault();
-  const box = document.getElementById(id);
-  box.classList.toggle('open');
-}
-
-// Filter
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    const f = btn.dataset.filter;
-    document.querySelectorAll('.pub-item').forEach(item => {
-      const show = f==='all' || item.dataset.type===f || item.dataset.year===f;
-      item.style.display = show ? 'grid' : 'none';
-    });
-  });
-});
-</script>
 </body>
 </html>
